@@ -1,5 +1,17 @@
 #!/bin/bash
 
+HERE=`pwd`
+
 # install vim-plug
 curl -fkLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
+if $? -ne 0; then
+    echo "error: down load vim-plug failed."
+    exit 1
+fi
+
+# config vimrc
+VIMRC_DIR=${HERE}/vim/vimrc
+cp ${VRIMRC_DIR} ~/.vimrc
+
