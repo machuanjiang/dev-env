@@ -1,3 +1,12 @@
+set number
+set tabstop=4
+set shiftwidth=4
+set mouse=a
+set autointend
+set cindent
+set autoread
+set clipboard=unnamed
+
 " Specify a directory for plugins
 " - For Neovim: stdpath('data') . '/plugged'
 " - Avoid using standard Vim directory names like 'plugin'
