@@ -1,0 +1,54 @@
+" Specify a directory for plugins
+" - For Neovim: stdpath('data') . '/plugged'
+" - Avoid using standard Vim directory names like 'plugin'
+call plug#begin('~/.vim/plugged')
+
+" code format
+"""""""""""""""""""""""""""""""""""""""
+Plug 'rhysd/vim-clang-format'
+map <F3> :ClangFormat<CR>:w<CR>
+
+" file tree
+"""""""""""""""""""""""""""""""""""""""
+Plug 'vim-scripts/The-NERD-tree'
+map <F2> :NERDTreeToggle<CR>
+let NERDTreeWinSize=25
+
+" optimize the ui
+"""""""""""""""""""""""""""""""""""""""
+Plug 'vim-airline/vim-airline'
+" set the color
+set t_Co=256
+set laststatus=2
+" use fonts of powerline
+let g:ariline_powerline_fonts = 1
+
+" set on tabline
+let g:airline#extensions#tabline#enabled = 1
+
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
+" Enable per-command history.
+" " CTRL-N and CTRL-P will be automatically bound to next-history and
+" " previous-history instead of down and up. If you don't like the change,
+" " explicitly bind the keys to down and up in your $FZF_DEFAULT_OPTS.
+let g:fzf_history_dir = '~/.local/share/fzf-history'
+map <C-f> :FZF<CR>
+
+" smarter way to move between window
+map <C-j> <C-W>j
+map <C-k> <C-W>k
+map <C-h> <C-W>h
+map <C-l> <C-W>l
+
+Plug 'majutsushi/tagbar'
+"let Tlist_Use_Right_Window=1
+"let Tlist_Show_One_File=1
+"let Tlist_Exit_OnlyWindow=1
+"let Tlist_GainFocus_On_ToggleOpen=1
+"let Tlist_WinWidth=32
+let g:tagbar_ctags_bin='/usr/bin/ctags'
+nmap <F4> :TagbarToggle<CR>
+
+" Initialize plugin system
+call plug#end()
