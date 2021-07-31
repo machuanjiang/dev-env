@@ -13,5 +13,5 @@ fi
 
 # config vimrc
 VIMRC_DIR=${HERE}/vim/vimrc
-cp ${VRIMRC_DIR} ~/.vimrc
+ln -s ${VRIMRC_DIR} ~/.vimrc
 
