@@ -6,6 +6,7 @@ set cindent
 set tabstop=2
 set shiftwidth=2
 set autoindent
+set mouse=a
 
 " expand tab to spaces
 set expandtab
@@ -37,7 +38,8 @@ let g:ycm_global_ycm_extra_conf='~/.vim/bundle/YouCompleteMe/third_party/ycmd/cp
 let g:ycm_show_diagnostics_ui = 0                           " disable syntax check
 " config goto subcommand key mapping
 nnoremap <C-b> :YcmCompleter GoToDeclaration<CR>
-nnoremap <C-r> :YcmCompleter GoToReferences<CR>
+nnoremap <C-n> :YcmCompleter GoToDefinition<CR>
+nnoremap <C-e> :YcmCompleter GoToReferences<CR>
 
 " code format
 """""""""""""""""""""""""""""""""""""""
