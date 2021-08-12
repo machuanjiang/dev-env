@@ -6,8 +6,6 @@ set cindent
 set tabstop=2
 set shiftwidth=2
 set autoindent
-set mouse=a
-set fillchars=vert:.
 
 " expand tab to spaces
 set expandtab
