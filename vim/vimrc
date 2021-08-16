@@ -102,6 +102,10 @@ let g:clang_library_path='/usr/lib/llvm-10/lib'
 Plug 'vhdirk/vim-cmake'
 
 Plug 'flazz/vim-colorschemes'
+
+Plug 'puremourning/vimspector'
+let g:vimspector_enable_mappings = 'VISUAL_STUDIO'
+
 call plug#end()
 
 " set background=dark
