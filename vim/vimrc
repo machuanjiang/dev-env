@@ -64,6 +64,7 @@ let g:cpp_class_decl_highlight = 1
 """""""""""""""""""""""""""""""""""""""
 Plug 'vim-scripts/The-NERD-tree'
 map <F2> :NERDTreeToggle<CR>
+map <C-s> :NERDTreeFind<CR>
 let NERDTreeWinSize=25
 
 " optimize the ui
