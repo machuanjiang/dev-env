@@ -24,7 +24,7 @@ Plug 'vim-scripts/indentpython.vim'
 """""""""""""""""""""""""""""""""""""""
 Plug 'godlygeek/tabular'
 Plug 'plasticboy/vim-markdown'
-let g:vim_markdown_folding_disabled = 1
+"let g:vim_markdown_folding_disabled = 1
 
 Plug 'Valloric/YouCompleteMe'
 autocmd InsertLeave * if pumvisible() == 0|pclose|endif " close preview window after leaving insert mode

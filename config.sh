@@ -15,3 +15,6 @@ fi
 VIMRC_DIR=${HERE}/vim/vimrc
 ln -s ${VRIMRC_DIR} ~/.vimrc
 
+# config lldb
+LLDBINIT_DIR=${HERE}/lldb/lldbinit
+ln -s ${LLDBINIT_DIR} ~/.lldbinit
